@@ -7,7 +7,6 @@
 
 package DCE::RPC;
 
-use strict;
 use Carp;
 use Socket;
 use Authen::Perl::NTLM;
@@ -22,7 +21,7 @@ require DynaLoader;
 @ISA = qw (Exporter DynaLoader);
 @EXPORT = qw ();
 @EXPORT_OK = qw (parse_co_hdr);
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 # Stolen from Crypt::DES.
 sub usage {
